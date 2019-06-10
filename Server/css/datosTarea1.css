@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+html {
+  background-color: #100F45  ;
+  font-family: "Roboto", sans-serif;
+}
+body{
+  height: 80em;
+}
+
+.caja {
+  width: 400px;
+  height: 35em;
+  background-color: white;
+  position: relative;
+  top: 40px;
+  margin: auto;
+  box-shadow:10px 20px
+   rgba(0,0,0,0.19);
+  border-radius:4px;
+}
+
+.grupo {
+  position: relative;
+  margin-bottom: 35px;
+  margin-left: 40px;
+}
+
+.texto {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 2px solid #1a284f;
+  color:#030d27;
+}
+
+
+.texto:focus {
+  outline: none;
+}
+
+label {
+  color: #030d27;
+  font-weight: bold;
+  font-size: 14px;
+  position: absolute;
+  left: 5px;
+  top: 0px;
+  pointer-events: none;
+  transition: 0.2s ease;
+
+
+}
+
+.texto:focus ~ label,
+.texto:valid ~ label{
+  top: -20px;
+}
+
+.texto:focus, texto:valid{
+  border-bottom: 3px solid #0231B1;
+}
+
+.header{
+  background: #DB640C;
+  position: relative;
+  height: 80px;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius:2px;
+}
+
+h1{
+  width: 100%;
+  height: 65px;
+  text-align: center;
+  color: white;
+  line-height: 65px;
+  font-size: 28px;
+}
+.btn {
+  position: relative;
+  left: 2em;
+  top :1em;
+  font-size:18px;
+  font-weight: bold;
+  display: block;
+  outline:none;
+  border-radius: 4px;
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    width:330px;
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+.info {background-color: #2196F3; } /* Blue */
+.info:hover {background: #0b7dda; color:#fff;}
+.info:active{
+  background:#0D0D3D;
+}
+.tabla{
+   position: relative;
+  top: 5em;
+  left: 2em;
+
+    width: 80em;
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 4px;
+     box-shadow:10px 20px
+   rgba(0,0,0,0.19);
+   border-collapse: collapse;
+
+}
+th{
+  font-weight: bold;
+  width: 15%;
+    height: 50px;
+    border: 1px solid #DB640C;
+    background-color: #DB640C;
+    color: white;
+    /*border-radius: 4px;
+    */
+}
+td {
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #DB640C;
+
+}
+tr:nth-child(even) td{
+   background-color:  #D4D4DC;
+}
+tr:nth-child(odd) td{
+  background-color: #fff;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    background-color: #111;
+    border-radius: 5px;
+}
